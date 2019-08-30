@@ -113,8 +113,8 @@ class PersonSchema(Schema):
 
 person_schema = PersonSchema()
 print(person_schema.load(dict(first_name='John',
-                        last_name='Cleese',
-                        dob='1939-10-27')))
+                              last_name='Cleese',
+                              dob='1939-10-27')))
 
 print('#' * 52 + '  So you can see we get this `UnmarshalResult` object back, with a `data` property - '
                  '  notice how the data was converted from a string into an actual date object.')
@@ -138,8 +138,8 @@ class PersonSchema(Schema):
 person_schema = PersonSchema()
 
 print(person_schema.load(dict(first_name='John',
-                        last_name='Cleese',
-                        dob='1939-10-27')))
+                              last_name='Cleese',
+                              dob='1939-10-27')))
 
 print('#' * 52 + '  And now you can see that `data` contains a `Person` object.')
 print('#' * 52 + '  So now lets go ahead and fix up our `MovieSchema` as well:')
