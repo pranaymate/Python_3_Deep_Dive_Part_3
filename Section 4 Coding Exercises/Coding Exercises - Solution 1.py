@@ -16,5 +16,6 @@ print('#' * 52 + '  Here is a better approach - instead of using a dictionary co
 def sort_dict_by_value(d):
     return dict(sorted(d.items(), key=lambda el: el[1]))
 
+
 print(sort_dict_by_value(composers))
 
